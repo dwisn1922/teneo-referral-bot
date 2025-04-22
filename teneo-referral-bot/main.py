@@ -1,8 +1,8 @@
 import sys
 import os
 
-# Tambahkan path root ke sys.path
-sys.path.append(os.path.dirname(os.path.abspath(__file__)))
+# Tambahkan path root project
+sys.path.append(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 
 from core.bot import TeneoReferralBot
 
