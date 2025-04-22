@@ -1,14 +1,14 @@
 import requests
 import time
 import logging
-from config import settings  # Ubah dari relative ke absolute import
-from core.utilities import get_random_user_agent, setup_logger  # Absolute import
+from config.settings import REFERRAL_LINK, MIN_DELAY, MAX_DELAY  # Impor spesifik
+from core.utilities import get_random_user_agent, setup_logger
 
 logger = setup_logger()
 
 class TeneoReferralBot:
     def __init__(self):
-        self.referral_link = settings.REFERRAL_LINK
+        self.referral_link = REFERRAL_LINK  # Langsung gunakan constant
         self.session = requests.Session()
         
     def simulate_visit(self):
