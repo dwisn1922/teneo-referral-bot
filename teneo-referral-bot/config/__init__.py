@@ -1,2 +1,2 @@
 from .settings import *
-from .user_agents import *  # Jika ada file user_agents.py
+# Hapus baris impor user_agents karena kita menggunakan file txt
