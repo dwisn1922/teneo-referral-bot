@@ -1,6 +1,6 @@
 import requests
 import time
-from config import settings
+from ..config import settings
 from .utilities import get_random_user_agent, setup_logger
 
 logger = setup_logger()
