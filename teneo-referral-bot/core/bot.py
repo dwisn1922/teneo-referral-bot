@@ -1,7 +1,8 @@
 import requests
 import time
-from ..config import settings
-from .utilities import get_random_user_agent, setup_logger
+import logging
+from config import settings  # Ubah dari relative ke absolute import
+from core.utilities import get_random_user_agent, setup_logger  # Absolute import
 
 logger = setup_logger()
 
